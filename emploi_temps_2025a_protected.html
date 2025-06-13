@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Emploi du Temps - Centre Berrichi</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            user-select: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            pointer-events: none;
+        }
+    </style>
+    <script>
+        // Désactiver clic droit
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        // Désactiver quelques raccourcis clavier
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 's')) {
+                return false;
+            }
+        };
+    </script>
+</head>
+<body>
+    <img src="emploi_temps_2025a_page1.jpg" alt="Emploi du temps">
+</body>
+</html>
